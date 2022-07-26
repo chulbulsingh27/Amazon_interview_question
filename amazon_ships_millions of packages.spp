@@ -1,0 +1,14 @@
+a fully loaded truck carries k parcel
+it is most efficient for the truck to be fully loaded
+arr[] = {2,3,6,10,11};
+k = 9;
+
+int triangularSum(vector<int>& nums) {
+        int n=nums.size();
+        while(n--){
+            for(int i=0;i<n;++i){
+                nums[i]=(nums[i]+nums[i+1])%10;
+            }
+        }
+        return nums[0];
+    }
